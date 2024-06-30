@@ -1,13 +1,13 @@
 const cursor = document.getElementById('cursor');
 
-let cursorX = 0, cursorY = 0;
+let CursorX = 0, CursorY = 0;
 
 
 const moveCursor = (e) => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-    cursor.style.top = `${cursorY}px`;
-    cursor.style.left = `${cursorX}px`;
+    CursorX = e.clientX;
+    CursorY = e.clientY;
+    Cursor.style.top = `${CursorY}px`;
+    Cursor.style.left = `${CursorX}px`;
 };
 
 document.addEventListener('mousemove', (e) => {
